@@ -6,4 +6,4 @@ Tomcat 8 as a container
 
 For a full tutorial about this project see my site:
 
-www.dominique-ubersfeld.com
+www.dominique-ubersfeld.com/JAVADEV/SpringDevelopment.html
