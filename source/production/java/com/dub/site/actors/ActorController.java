@@ -42,7 +42,11 @@ import java.util.Map;
 
 
 @WebController
+@PropertySource("classpath:install.properties")
 public class ActorController {
+
+	@Value("${photoTempDir}")
+	private String photoTempDir;
 	
 	@Resource
 	private ActorServices actorServices;
@@ -253,7 +257,7 @@ public class ActorController {
 		uploadedFileRef = form.getUploadedFile();
 		fileName = form.getUploadedFile().getOriginalFilename();
 	 
-		String path = "/home/dominique/Pictures/tmp/" + fileName; 
+		String path = photoTempDir + fileName; 
        	 
 		File outputFile = new File(path);
 	 
