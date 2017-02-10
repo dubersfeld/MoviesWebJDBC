@@ -20,7 +20,7 @@ Note: this project was run on my home computer. To run it on your system you hav
 
 production/java/com/dub/site/actors/ActorController.java:		String path = "/home/dominique/Pictures/tmp/" + fileName; 
 
-production/resources/log4j2.xml:        <RollingFile name="DUbFileAppender" fileName="/home/dominique/logs/support.log"
-production/resources/log4j2.xml:                     filePattern="/home/dominique/logs/support-%d{MM-dd-yyyy}-%i.log">
+production/resources/log4j2.xml:        &lt;RollingFile name="DUbFileAppender" fileName="/home/dominique/logs/support.log"
+				                     filePattern="/home/dominique/logs/support-%d{MM-dd-yyyy}-%i.log"&gt;
 
 where the folder /home/dominique should be replaced by a folder that matches your own file system.
