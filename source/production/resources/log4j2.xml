@@ -5,6 +5,8 @@
             <PatternLayout
                     pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </Console>
+
+	<!--Edit this line to match your actual file system-->
         <RollingFile name="DUbFileAppender" fileName="/home/dominique/logs/support.log"
                      filePattern="/home/dominique/logs/support-%d{MM-dd-yyyy}-%i.log">
             <PatternLayout>
