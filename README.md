@@ -1,34 +1,22 @@
-This is a demonstration project on Spring development. It involves:
+This is a demonstration project on Spring Boot development. It requires:
 
-MySQL as a database with Spring JDBC support
-Eclipse Mars with Maven plugin
-Tomcat 8 as a container
+A recent MySQL server version installed (I used 8.0.6). 
 
-moviesDBBasic.sql was used to generate the MySql database used in this project.
+A recent Maven version installed (I used 3.6.0).
 
-This project can run on Tomcat 8 from Eclipse or on Tomcat 8 standalone from a .war file. It requires Java 8 Runtime Environment.
+In addition STS was used for development but is not required for running this application.
 
-This is the first version of this project. More stuff is coming soon with a version that uses Hibernate with Spring support.
+moviesDBBasic.sql was used to create and populate the MySQL database used in this project.
 
-For a full tutorial about this project please visit my personal site:
+This project requires Java 8 Runtime Environment.
 
-http://www.dominique-ubersfeld.com/JAVADEV/SpringDevelopment.html
+To launch the application run the command:
 
-As a reference book I mainly used Java for Web Applications by Nicholas S. Williams
+```
+mvn spring-boot:run
+```
 
-Note: this project was run on my home computer. To run it on your system you have to edit some files to customize them to your actual file system. They are:
-
-production/java/com/dub/site/actors/ActorController.java:		String path = "/home/dominique/Pictures/tmp/" + fileName; 
-
-production/resources/log4j2.xml:        &lt;RollingFile name="DUbFileAppender" fileName="/home/dominique/logs/support.log"
-				                     filePattern="/home/dominique/logs/support-%d{MM-dd-yyyy}-%i.log"&gt;
-
-where the folder /home/dominique should be replaced by a folder that matches your own file system.
-
-This project can be deployed on Tomcat with the context root: 
-
-localhost:8080/movies-web
-
+When the application has started hit the browser on localhost:8080/movies-web
 
 
 Dominique Ubersfeld, Cachan, France

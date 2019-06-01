@@ -1,0 +1,12 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /movies-web
+
+dataSource: 
+  url: "jdbc:mysql://localhost:3306/movieDB"
+  username: spring
+  password: password1234
+    
+# Edit to match your own file system
+photoTempDir: "/home/ubersfeld/Pictures/tmp/"
