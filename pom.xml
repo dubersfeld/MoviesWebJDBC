@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.dub</groupId>
-	<artifactId>marathon-2</artifactId>
+	<artifactId>MoviesWebJDBC</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>marathon-2</name>
+	<name>MoviesWebJDBC</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
