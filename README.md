@@ -16,7 +16,7 @@ To launch the application run the command:
 mvn spring-boot:run
 ```
 
-When the application has started hit the browser on localhost:8080/movies-web
+When the application has started open a browser and hit URL `localhost:8080/movies-web`.
 
 
 Dominique Ubersfeld, Cachan, France
